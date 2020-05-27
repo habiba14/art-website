@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+  <title> Gallery</title>
+
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  
+  </script>
+
+
+</head> 
+
+<body>
+
+  <div class="container text-center">
+    <img src="logo.jpeg" alt="" width="80px" height="90px">
+
+    <h3 style="color: orange;display: inline-block;line-height: 100px;font-weight: bold;  font-family:  sans-serif;">
+      ARTIST HIRA BALOCH
+    </h3>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text text-center">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li> &emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> &emsp;
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">Gallery</a>
+          </li> &emsp;
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Paintings</a>
+              <a class="dropdown-item" href="#">Sketches</a>
+              <a class="dropdown-item" href="#">3D art</a>
+            </div>
+          </li>
+          &emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+      </span> 
+    </div>
+  </nav>
+  <br><br>
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-md-12 col-lg-12">
+          <img src="LOGO2.jpg" style="width:100%;height:350px;">
+          <div class="centered">GALLERY</div>
+          <div class="centered1">
+            <a href="index.html" class="link"> Home</a>
+            ->
+            <a href="about.html" class="link2"> gallery </a>
+          </div>
+        </div> 
+        </div>
+        </div>
+        <br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="heading1"> MY GALLERY 
+              </h1>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The four columns -->
+        <div class="container">
+        <div class="row">
+          <div class="column">
+            <img src="p1 (1).jpeg" alt="rose flower" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="p1 (4).jpeg" alt="Mountains" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="picture (8).jpeg" alt="tree" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="picture (9).jpeg" alt="flower baskets" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+        </div>
+         <div class="container1">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:60%;height: 400px;">
+          <div id="imgtext"></div>
+        </div>
+      </div>
+    </div>
+
+        <br>  
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <img src="pic1.jpeg" alt="rose flower" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="pic2.jpeg" alt="Mountains" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="pic3.jpeg" alt="tree" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="pic4.jpeg" alt="flower baskets" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+        </div>
+         <div class="container1">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:60%;height: 400px;">
+          <div id="imgtext"></div>
+        </div>
+      </div>
+    </div>
+
+        <br>  
+        </div>
+        <div class="container">
+        <div class="row">
+          <div class="column">
+            <img src="pic5.jpeg" alt="rose flower" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="pic6.jpeg" alt="Mountains" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="picture (1).jpeg" alt="tree" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="picture (7).jpeg" alt="flower baskets" style="width:100%;height:200px" onclick="myFunction(this);">
+          </div>
+        </div>
+        
+         <div class="container1">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:60%;height: 400px;">
+          <div id="imgtext"></div>
+        </div>
+        <br>
+       </div>
+        </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <img src="picture (2).jpeg" alt="rose flower" style="width:100%;height:200px" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="picture (13).jpeg" alt="Mountains" style="width:100%;height:200px" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="picture (12).jpeg" alt="tree" style="width:100%;height:200px" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="picture (5).jpeg" alt="flower baskets" style="width:100%;height:200px" onclick="myFunction(this);">
+            </div>
+          </div>
+           <div class="container1">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:60%;height: 400px;">
+            <div id="imgtext"></div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        
+ 
+</body> 
+
+</html> 
